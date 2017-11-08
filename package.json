@@ -1,0 +1,24 @@
+{
+  "name": "babel-plugin-require-alias",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lsong",
+  "license": "MIT",
+  "description": "Module resolver plugin for Babel",
+  "keywords": [
+    "babel",
+    "require",
+    "alias"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/song940/babel-plugin-require-alias.git"
+  },
+  "bugs": {
+    "url": "https://github.com/song940/babel-plugin-require-alias/issues"
+  },
+  "homepage": "https://github.com/song940/babel-plugin-require-alias#readme"
+}
