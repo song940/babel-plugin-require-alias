@@ -17,7 +17,12 @@ function requireAlias(aliases) {
   return () => {
     return {
       visitor: {
-        CallExpression: function CallExpression(path) {
+        ImportDeclaration(path){
+          const { node } = path;
+          if(!node.source) return;
+          node.source.value = replaceWithAlias(node.source.value);
+        },
+        CallExpression(path){
           // require
           const { node } = path;
           if (node.callee.name === 'require' && node.arguments.length === 1) {
